@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "ClusterCut",
   description: "Cross-platform clipboard synchronization",
-  base: '/docs/',
+  base: '/',
   ignoreDeadLinks: true,
   head: [
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/docs/apple-touch-icon.png' }],
