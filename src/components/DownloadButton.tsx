@@ -30,6 +30,7 @@ export default function DownloadButton() {
 
   useEffect(() => {
     const userAgent = window.navigator.userAgent;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (userAgent.includes('Win')) setOs('Windows');
     else if (userAgent.includes('Mac')) setOs('macOS');
     else if (userAgent.includes('Linux')) setOs('Linux');
