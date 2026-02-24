@@ -49,7 +49,7 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <DownloadButton />
-            <a href="https://docs.clustercut.app/getting-started" className="w-full sm:w-auto px-8 py-4 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white font-semibold rounded-xl hover:bg-gray-200 dark:hover:bg-white/10 transition-colors flex items-center justify-center space-x-2 backdrop-blur-sm">
+            <a href="https://docs.clustercut.app" className="w-full sm:w-auto px-8 py-4 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white font-semibold rounded-xl hover:bg-gray-200 dark:hover:bg-white/10 transition-colors flex items-center justify-center space-x-2 backdrop-blur-sm">
               <Book className="w-4 h-4" />
               <span>Read the Docs</span>
             </a>

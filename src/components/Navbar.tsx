@@ -32,7 +32,7 @@ export default function Navbar() {
           </div>
           <div className="flex items-center space-x-6">
             <a 
-              href="https://docs.clustercut.app/" 
+              href="https://docs.clustercut.app" 
               className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
             >
               <Book className="w-4 h-4" />

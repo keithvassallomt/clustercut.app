@@ -16,7 +16,7 @@ Ready to start syncing your clipboard securely? Follow this guide to get Cluster
 ### Linux
 We recommend installing via Flathub:
 
-[![Get it on Flathub](/flathub.svg)](https://flathub.org)
+[![Get it on Flathub](/flathub.svg)](https://flathub.org/en/apps/com.keithvassallo.clustercut)
 
 Or via terminal:
 

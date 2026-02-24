@@ -43,7 +43,7 @@ export default function DownloadButton() {
       case 'Windows':
         return { icon: WindowsIcon, text: "Download for Windows", link: "/downloads/windows" };
       case 'Linux':
-        return { icon: FlatpakIcon, text: "Get it on Flathub", link: "https://flathub.org/apps/com.keithvassallo.clustercut" }; // Real flathub link
+        return { icon: FlatpakIcon, text: "Get it on Flathub", link: "https://flathub.org/en/apps/com.keithvassallo.clustercut" }; // Real flathub link
       default:
         return { icon: ArrowRight, text: "Download ClusterCut", link: "/downloads" };
     }
