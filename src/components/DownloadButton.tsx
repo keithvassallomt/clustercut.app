@@ -15,11 +15,8 @@ const WindowsIcon = () => (
 
 
 
-const FlatpakIcon = () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-        <path d="M12 0.75L2.25 5.625V18.375L12 23.25L21.75 18.375V5.625L12 0.75ZM12 2.45578L19.2942 6.10289L12 9.75L4.70578 6.10289L12 2.45578ZM3.75 7.42781L11.25 11.1778V16.8909L7.5 15.0159V11.55L3.75 9.675V7.42781ZM7.5 16.6909L11.25 18.5659V21.4997L3.75 17.7497V16.6909H7.5ZM12.75 11.1778L20.25 7.42781V9.675L16.5 11.55V15.0159L12.75 16.8909V11.1778ZM16.5 16.6909H20.25V17.7497L12.75 21.4997V18.5659L16.5 16.6909Z"/> 
-        {/* Approximate cube/box shape */}
-    </svg>
+const FriendlyHubIcon = () => (
+    <img src="/friendlyhub.png" alt="FriendlyHub" className="w-5 h-5" />
 )
 
 
@@ -43,7 +40,7 @@ export default function DownloadButton() {
       case 'Windows':
         return { icon: WindowsIcon, text: "Download for Windows", link: "/downloads/windows" };
       case 'Linux':
-        return { icon: FlatpakIcon, text: "Get it on Flathub", link: "https://flathub.org/en/apps/com.keithvassallo.clustercut" }; // Real flathub link
+        return { icon: FriendlyHubIcon, text: "Get it on FriendlyHub", link: "https://friendlyhub.org/apps/app.clustercut.clustercut" };
       default:
         return { icon: ArrowRight, text: "Download ClusterCut", link: "/downloads" };
     }

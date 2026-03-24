@@ -6,6 +6,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center text-gray-600 dark:text-gray-500 text-sm">
           <p>© {new Date().getFullYear()} <a href="https://keithvassallo.com" className="hover:text-gray-900 dark:hover:text-white transition-colors underline decoration-dashed decoration-gray-400 dark:decoration-gray-500/50 underline-offset-4">Keith Vassallo</a>.</p>
+          <a href="https://friendlymanifesto.org" target="_blank" rel="noopener noreferrer" className="mt-4 md:mt-0">
+            <img src="/friendly_manifesto_black.svg" alt="Friendly Manifesto" className="h-8 block dark:hidden" />
+            <img src="/friendly_manifesto_white.svg" alt="Friendly Manifesto" className="h-8 hidden dark:block" />
+          </a>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="hover:text-gray-900 dark:hover:text-white transition-colors">Privacy Policy</Link>
             <a href="https://github.com/keithvassallomt/ClusterCut" className="hover:text-gray-900 dark:hover:text-white transition-colors">Open Source</a>

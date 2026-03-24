@@ -14,16 +14,9 @@ Ready to start syncing your clipboard securely? Follow this guide to get Cluster
 2.  Run the installer and follow the on-screen instructions.
 
 ### Linux
-We recommend installing via Flathub:
+We recommend installing via FriendlyHub:
 
-[![Get it on Flathub](/flathub.svg)](https://flathub.org/en/apps/com.keithvassallo.clustercut)
-
-Or via terminal:
-
-
-```bash
-flatpak install flathub com.keithvassallo.clustercut
-```
+[![Get it on FriendlyHub](/friendlyhub.svg)](https://friendlyhub.org/apps/app.clustercut.clustercut)
 
 Distribution-specific pacakges (`.deb` and `.rpm`) are also available from the [Downloads](/downloads) page. 
 
