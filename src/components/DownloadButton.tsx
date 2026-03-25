@@ -24,6 +24,7 @@ type OS = 'macOS' | 'Windows' | 'Linux' | 'Unknown';
 
 export default function DownloadButton() {
   const [os, setOs] = useState<OS>('Unknown');
+  const [directDownloadUrl, setDirectDownloadUrl] = useState<string | null>(null);
 
   useEffect(() => {
     const userAgent = window.navigator.userAgent;
@@ -33,12 +34,34 @@ export default function DownloadButton() {
     else if (userAgent.includes('Linux')) setOs('Linux');
   }, []);
 
+  useEffect(() => {
+    if (os !== 'Windows' && os !== 'macOS') return;
+
+    fetch('https://api.github.com/repos/keithvassallomt/ClusterCut/releases/latest')
+      .then(res => res.ok ? res.json() : null)
+      .then(data => {
+        if (!data?.assets) return;
+        let asset;
+        if (os === 'Windows') {
+          asset = data.assets.find((a: { name: string }) => a.name.endsWith('.exe'))
+               || data.assets.find((a: { name: string }) => a.name.endsWith('.msi'));
+        } else {
+          asset = data.assets.find((a: { name: string }) => a.name.endsWith('.dmg'));
+        }
+        if (asset) {
+          // eslint-disable-next-line react-hooks/set-state-in-effect
+          setDirectDownloadUrl(asset.browser_download_url);
+        }
+      })
+      .catch(() => { /* fall back to downloads page */ });
+  }, [os]);
+
   const getButtonContent = () => {
     switch (os) {
       case 'macOS':
-        return { icon: AppleIcon, text: "Download for macOS", link: "/downloads/macos" };
+        return { icon: AppleIcon, text: "Download for macOS", link: directDownloadUrl || "/downloads/macos" };
       case 'Windows':
-        return { icon: WindowsIcon, text: "Download for Windows", link: "/downloads/windows" };
+        return { icon: WindowsIcon, text: "Download for Windows", link: directDownloadUrl || "/downloads/windows" };
       case 'Linux':
         return { icon: FriendlyHubIcon, text: "Get it on FriendlyHub", link: "https://friendlyhub.org/apps/app.clustercut.clustercut" };
       default:
