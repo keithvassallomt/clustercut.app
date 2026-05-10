@@ -21,3 +21,7 @@ Once installed, you'll have access to the same features as the system tray icon,
 
 ![GNOME Quick Settings](/gnome_quick.png)
 
+::: info Keep the extension up to date
+The GNOME integration extension is updated alongside ClusterCut itself. After upgrading ClusterCut, open the GNOME Extensions app and update the **ClusterCut** extension to the matching version — otherwise clipboard sync, image sync, or formatted-text sync may stop working on GNOME Wayland.
+:::
+

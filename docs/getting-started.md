@@ -43,3 +43,11 @@ You can now copy text on **Device 1** and paste it on **Device 2**, and vice ver
 ![Device 1 copying](/device_1_copy.png)
 
 ![Device 2 pasting](/device_2_paste.png)
+
+## Upgrading from a previous version
+
+If you've used ClusterCut before, the upgrade to 0.3.0 changes how devices verify each other. After updating, **all of your previously-paired devices will need to re-pair**. ClusterCut shows a banner reminding you on first launch — re-pairing follows the same flow as the original join above.
+
+::: warning Mixing versions
+ClusterCut 0.3.0 cannot communicate with peers running 0.2.x or earlier. Make sure every device in your cluster is on 0.3.0 or later before re-pairing.
+:::

@@ -2,6 +2,10 @@
 
 ClusterCut allows you to securely transfer files between your devices with a single click.
 
+::: info Clipboard images
+This page covers transferring **files** that you've copied in your file manager. **Images copied from inside an app** (browser right-click → "Copy Image", screenshot tools, etc.) sync as clipboard items — no setup needed. Small images sync inline; large ones automatically use the same transfer pipe described below, with the same auto-download limit.
+:::
+
 ## Sending small files
 Start by copying the file you want to send to the clipboard on your source device (using your system's file manager).
 

@@ -59,6 +59,10 @@ Clicking this notification (or opening the **History** view) will show the avail
 
 Once the file has been downloaded, you can then paste it anywhere on your device.
 
+::: info Large clipboard images
+The same Auto-Download limit also applies to large clipboard images. Small images sync inline with no notification. Larger ones use the same pipe as files: peers download them automatically up to the limit, or surface a notification you can accept manually.
+:::
+
 ## Notifications
 Here you can choose which notifications you want to receive.
 

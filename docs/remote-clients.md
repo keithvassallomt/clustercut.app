@@ -34,5 +34,5 @@ Connect the cluster as usual. Once connected, you can use ClusterCut as with any
 ![Remote Cluster Connected](/remote_connected.png)
 
 ::: warning ClusterCut over Internet
-ClusterCut is designed for Local Area Networks, or VPNs. That being said, if you forward port 4654 on your router to a device running ClusterCut (or use a device-specific IPv6 address), you can connect to your cluster from anywhere using your public IP address. Traffic is end-to-end encrypted, so it's safe to do so. This configuration, however, is not tested or supported.
+ClusterCut is designed for Local Area Networks, or VPNs. That being said, if you forward port 4654 on your router to a device running ClusterCut (or use a device-specific IPv6 address), you can connect to your cluster from anywhere using your public IP address. Traffic uses mutual TLS with certificate pinning, so only your paired peers can read it. This configuration, however, is not tested or supported.
 :::
