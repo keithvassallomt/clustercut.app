@@ -24,7 +24,7 @@ const features = [
   },
   {
     icon: Lock,
-    title: "Zero Knowledge",
+    title: "Privacy First",
     description: "We don't collect data, telemetrics, or logs. Your privacy is our top priority."
   },
   {
