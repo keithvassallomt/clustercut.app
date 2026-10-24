@@ -46,6 +46,13 @@ You can now copy text on **Device 1** and paste it on **Device 2**, and vice ver
 
 ## Upgrading from a previous version
 
+### To 0.5.0
+
+-   **Manual mode shortcuts**: `Ctrl+Alt+C` is now **Copy & Send**, which copies what you've selected and sends it, and `Ctrl+Alt+V` is **Receive & Paste**. The old actions moved to `Ctrl+Alt+Shift+C` (Send Clipboard) and `Ctrl+Alt+Shift+V` (Receive Only). If you were using the old defaults, ClusterCut moves them for you. See [Manual Mode](/manual-mode).
+-   **GNOME**: update the ClusterCut extension to version 4.2 for the new shortcuts.
+
+### To 0.3.0
+
 If you've used ClusterCut before, the upgrade to 0.3.0 changes how devices verify each other. After updating, **all of your previously-paired devices will need to re-pair**. ClusterCut shows a banner reminding you on first launch — re-pairing follows the same flow as the original join above.
 
 ::: warning Mixing versions

@@ -30,6 +30,7 @@ export default defineConfig({
           { text: 'File Transfers', link: '/file-transfers' },
           { text: 'History', link: '/history' },
           { text: 'Settings', link: '/settings' },
+          { text: 'Manual Mode', link: '/manual-mode' },
           { text: 'Quick Access', link: '/quick-access' },
           { text: 'Remote Clients', link: '/remote-clients' },
           { text: 'Troubleshooting', link: '/troubleshooting' }

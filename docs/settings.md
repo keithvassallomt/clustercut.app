@@ -3,7 +3,16 @@
 Configure ClusterCut to fit your workflow.
 
 ## General
-**Start on Startup**: Automatically launch ClusterCut when you log in.
+
+<!-- SCREENSHOT settings_general.png: the General card in Settings, showing Start on Startup, Keep History, Keep At Most and History storage limit. -->
+![General Settings](/settings_general.png)
+
+-   **Start on Startup**: Automatically launch ClusterCut when you log in.
+-   **Keep History**: How long copied and received items stay in [History](/history): 15 minutes, 1 hour, 1 day, 1 week, or until ClusterCut quits (the default). Choose **Off** to keep no History at all.
+-   **Keep At Most**: The most items History holds, from 10 to 500 (50 by default). When it's full, the oldest go first.
+-   **History storage limit**: How much copied text and image content History keeps so you can copy it again. Files don't count towards it.
+
+Whatever you choose here, History only lasts while ClusterCut runs: quitting clears it.
 
 ## Device Settings
 Here you can change the name of your device as it appears on the cluster. By default, this is set to your device's hostname.
@@ -23,20 +32,17 @@ By default, ClusterCut will automatically send your clipboard contents to the cl
 
 To prevent your clipboard contents from being automatically sent to the cluster, disable **Automatic Send**. Similarly, to prevent your local clipboard from being overwritten by incoming content from the cluster, disable **Automatic Receive**.
 
-Disabling one of the above option allows you to set a global clipboard shortcut to manually send or receive clipboard contents. 
+Turning either one off puts ClusterCut in [manual mode](/manual-mode), and Settings shows the global shortcuts for that direction: **Copy & Send**, **Cut & Send** and **Send Clipboard** with Automatic Send off, and **Receive & Paste** and **Receive Only** with Automatic Receive off. With Automatic Send off, `Ctrl+C` (or `Cmd+C` on macOS) no longer sends your clipboard to the cluster, but `Ctrl+Alt+C` copies and sends in one go when you want it to.
 
-![Keyboard Shortcut](/settings_shortcut.png)
+![Manual mode shortcuts in Settings](/settings_shortcuts.png)
 
-In the above example, **Automatic Send** has been disabled, and the shortcut `Ctrl+Alt+C` has been set to manually send clipboard contents to the cluster. With that set, `CTRL+C` (or `CMD+C` on macOS) will no longer send your clipboard to the cluster, but you can use the configured shortcut when you want to do so.
+In manual mode, the Synchronization section can also show:
 
-### Manual Send/Receive
-When you disable either **Automatic Send** or **Automatic Receive**, ClusterCut will display an action button in the main UI when content is available to send or receive. 
+-   **Keep My Clipboard**: Copy & Send, Cut & Send and Receive & Paste put back what was on your clipboard before.
+-   **Allow Key Presses** (KDE Plasma and macOS): Lets ClusterCut press copy, cut and paste for the one-step shortcuts.
+-   **Bind Keys in Hyprland** (Hyprland only): Lets ClusterCut add its own key binds while it runs.
 
-![Action Button](/settings_fab.png)
-
-For example, with **Automatic Send** disabled, you can use the action button to manually send your clipboard to the cluster.
-
-![Manual Send](/settings_manual_send.png)
+[Manual Mode](/manual-mode) explains each shortcut, what it needs on your system, and how to change its keys.
 
 ## File Transfer
 This section allows you to enable or disable file transfer to/from your computer.

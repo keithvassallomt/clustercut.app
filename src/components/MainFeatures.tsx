@@ -19,14 +19,14 @@ const features = [
   {
     icon: History,
     title: "Clipboard History",
-    description: "Never lose a clip again. ClusterCut automatically saves your clipboard history, so you can access and paste previous items whenever you need them.",
+    description: "Never lose a clip again. ClusterCut keeps your clipboard history, so you can access and paste previous items whenever you need them. You decide how long it's kept and how much it holds, or turn it off.",
     image: "/feature_history.png",
     imageAlign: "right"
   },
   {
     icon: Settings,
     title: "Manual Mode",
-    description: "Don't want to automatically send or receive everything? Enable manual mode to be in full control of your data flow.",
+    description: "Don't want to automatically send or receive everything? Enable manual mode to be in full control of your data flow. One shortcut copies your selection and sends it, another pastes what you were sent.",
     image: "/feature_manual.png",
     imageAlign: "left"
   },

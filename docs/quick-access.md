@@ -22,6 +22,8 @@ Once installed, you'll have access to the same features as the system tray icon,
 ![GNOME Quick Settings](/gnome_quick.png)
 
 ::: info Keep the extension up to date
-The GNOME integration extension is updated alongside ClusterCut itself. After upgrading ClusterCut, open the GNOME Extensions app and update the **ClusterCut** extension to the matching version — otherwise clipboard sync, image sync, or formatted-text sync may stop working on GNOME Wayland.
+The GNOME integration extension is updated alongside ClusterCut itself. After upgrading ClusterCut, open the GNOME Extensions app and update the **ClusterCut** extension to the matching version. Otherwise clipboard sync, image sync, or formatted-text sync may stop working on GNOME Wayland.
+
+ClusterCut 0.5.0 needs version 4.2 or newer of the extension for [Copy & Send, Cut & Send and Receive & Paste](/manual-mode#copy-send-cut-send-and-receive-paste), which press copy, cut and paste for you. The extension only presses those keys, and only for ClusterCut.
 :::
 

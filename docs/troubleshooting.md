@@ -18,5 +18,15 @@ ClusterCut 0.3.0 changes the way devices talk to each other and **cannot communi
 -   Check if **Auto Send** and **Auto Receive** are enabled in settings.
 -   If you're trying to download a file which exceeds the auto download size, ensure you download the file first (from the **History** screen) before attempting to paste. 
 
+## Manual mode shortcuts not working
+-   **Nothing happens on Wayland**: On GNOME 48+ and KDE Plasma 5.27+, your desktop assigns the keys. If you turned down its request, click **Ask Again** next to the shortcut in **Settings > Synchronization**. On Hyprland, turn on **Bind Keys in Hyprland**, or add the lines Settings shows to your config. On Sway or GNOME 47 and older, bind a key to the command Settings shows. See [Changing the keys](/manual-mode#changing-the-keys).
+-   **"Nothing selected" notification**: Copy & Send or Cut & Send found nothing to copy, so nothing was sent. Select something in the app first.
+-   **Copy & Send, Cut & Send or Receive & Paste do nothing**: ClusterCut needs to press keys for these:
+    -   **GNOME**: update the ClusterCut extension to version 4.2 or newer.
+    -   **KDE Plasma**: click **Allow** next to **Allow Key Presses** in Settings.
+    -   **macOS**: allow ClusterCut under **System Settings > Privacy & Security > Accessibility**.
+    -   **Windows**: if the app you're in runs as administrator, ClusterCut has to as well.
+    -   **Other Wayland desktops, such as Sway**: ClusterCut can't press keys there. Use Send Clipboard and Receive Only instead.
+
 ## Other Issues
 If you encounter any other issues, please check for solutions or ask a question on the [GitHub Issues](https://github.com/keithvassallomt/ClusterCut/issues) page.

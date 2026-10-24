@@ -63,6 +63,13 @@ features:
       light: /features/settings.svg
       dark: /features/settings-dark.svg
       alt: Settings
+  - title: Manual Mode
+    details: Send and receive on your terms, with one-step shortcuts.
+    link: /manual-mode
+    icon:
+      light: /features/manual-mode.svg
+      dark: /features/manual-mode-dark.svg
+      alt: Manual Mode
   - title: Troubleshooting
     details: Solutions to common problems and issues.
     link: /troubleshooting
